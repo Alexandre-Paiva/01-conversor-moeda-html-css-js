@@ -1,9 +1,10 @@
-// Contante para capturar os dados do formulário.
+// Constante para capturar os dados do formulário.
 const form = document.getElementById('form');
 form.addEventListener('submit', handleSubmit);
 const inputValue = document.getElementById('value-real');
 const selectedCurrency = document.getElementById('currency');
 const result = document.getElementById('result');
+
 
 function handleSubmit(e) {
     e.preventDefault();
@@ -15,6 +16,7 @@ function handleSubmit(e) {
             return;
         }
     converter();
+    getCurrency(currency);
 };
 
 function converter(){
@@ -28,6 +30,7 @@ function converter(){
 
     inputValue.value = '';
     selectedCurrency.value = '';
+
 };
 
 function valueFormartter(locale, currency) {

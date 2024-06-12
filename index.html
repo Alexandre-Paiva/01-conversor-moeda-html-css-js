@@ -22,13 +22,14 @@ rel="stylesheet">
         </h1>
     </header>
     <main>
+
         <form id="form">
             <section classs="inputs-conteiner">
                 <div class="form-group">
                     <label for="value-real">Valor a ser convertido</label>
                     <input 
                         type="number"
-                        placeholder="R$ 10,00"
+                        placeholder="R$ 10.00"
                         id="value-real"
                         name="value-real"
                         min="0"
@@ -48,6 +49,17 @@ rel="stylesheet">
         </form>
         <h2 id="result"></h2>
     </main>
+    <aside>
+        <h3 id="title"></h3>
+            <p id="date">
+                Data: <span id="thisdate"></span>
+            </p>
+            <p id="value">
+                Valor Máximo: <span id="maxvalue"></span><br>
+                Valor Minimo: <span id="minvalue"></span>
+            </p>
+    </aside>
+
     <footer>
         <span>
             @Copyright 2023-2024 por albx.com.br. Todos os direitos reservados.
@@ -56,6 +68,7 @@ rel="stylesheet">
     </footer>
     <!--JAVASCRIPT-->
     <script src="./js/script.js"></script>
+    <script src="./js/api.js"></script>
     
 </body>
 </html>
